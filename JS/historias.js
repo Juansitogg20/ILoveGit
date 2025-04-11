@@ -51,11 +51,11 @@ class peliculas{
         botonMusic.addEventListener("click", () => {
             if (!estado) {
                 estado = true;
-                botonMusic.src = "../IMG/pausa.webp"
+                botonMusic.src = "IMG/pausa.webp"
                 opening.play();
             } else {
                 estado = false;
-                botonMusic.src = "../IMG/play.webp"
+                botonMusic.src = "IMG/play.webp"
                 opening.pause();
             }
         })
