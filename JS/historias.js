@@ -55,7 +55,7 @@ class peliculas{
                 opening.play();
             } else {
                 estado = false;
-                botonMusic.src = "IMG/play.webp"
+                botonMusic.src = "../IMG/play.webp"
                 opening.pause();
             }
         })
