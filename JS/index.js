@@ -1,5 +1,5 @@
-let Music = new Audio("../AUDIO/inicio.ogg")
-let welcome = new Audio("../AUDIO/welcome.ogg")
+let Music = new Audio("AUDIO/inicio.ogg")
+let welcome = new Audio("AUDIO/welcome.ogg")
 let menu = document.querySelector(".menu")
 let introCarta = document.querySelector(".intro")
 let body = document.querySelector(".body")
@@ -24,9 +24,9 @@ xCarta.addEventListener("click", () => {
     introCarta.style.display = "none"
     menu.style.filter = "blur(0px)"
     body.style.overflowY = "visible"
-    // setTimeout(() => {
-    //     Music.play()
-    // },1500)
+    setTimeout(() => {
+        Music.play()
+    },1500)
 })
 
 // Aparicion de elementos
