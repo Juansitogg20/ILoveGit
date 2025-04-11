@@ -39,7 +39,11 @@ class peliculas{
                 <p class="generoTitulo">Genero:</p>
                 <P class="genero"> ${peliculasAgregadas[0].trama}</P>
             </div>
-            <h5 class="iniciar">INICIAR</h5>
+            <div class="descargar">
+                <h5 class="iniciar">INICIAR</h5>
+                <p>o</p>
+                <a href="/Archivos/Teddy La ultima luz.pdf" download><h5 class="iniciar">DESCARGAR</h5></a>
+            </div>
         `;
         let opening = new Audio(`${peliculasAgregadas[0].openingRuta}`)
         opening.volume = 0.5;
