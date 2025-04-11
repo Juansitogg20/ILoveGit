@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+body {
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    background: rgb(221,181,129);
+    background: linear-gradient(1deg, rgba(221,181,129,1) 0%, rgba(255,186,95,1) 100%); 
+    color: var(--letra);
+    overflow-x: hidden;
+}
+.proximamente{
+    position: fixed;
+    z-index: 5;
+    text-align: center;
+    height: 90px;
+    width:100%;
+    transform: translateY(-150px);
+    color: #fff;
+    text-shadow: -1px 1px #000;
+    align-items: center;
+    justify-content: center;
+}
+.proximamenteAnimacion{
+    animation: proximamente 8s;
+}
+@keyframes proximamente {
+    0%, 100%{
+        transform: translateY(-150px);
+    } 5%, 95%{
+        transform: translateY(0px);
+    }
+}
+.viaje{
+    border-radius: 0px 0px 10px 10px;
+    border: solid 2px #000;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    background: #ac5737;
+    width: 50%;
+}
+
+:root{
+    --fondo:#ddb581;
+    --color-secundario:  #a64d31;
+    --letra: #a54a37;
+}
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: var(--colores-letras);
+    letter-spacing: 3px;
+    user-select: none;
+}
+.menu{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    filter: blur(10px);
+}
+.intro{
+    z-index: 2;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.intro-mensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-carta{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    padding: 20px;
+    color: #000;
+    background: #e9c488;
+    border-radius: 20px 0px 20px 0px;
+    border: solid 3px #000;
+    width: 500px;
+    height: fit-content;
+}
+.x{
+    width: fit-content;
+    background: red;
+    border: solid 2px #000;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    z-index: 3;
+}
+.cerrar-carta{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    color: #000;
+    margin-bottom: 10px;
+}
+.intro-img{
+    position: absolute;
+    z-index: 2;
+    right: -10%;
+}
+.logo{
+    width: 70px;
+    margin-right: 20px;
+}
+.opciones-menu{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+    align-items: center;
+}
+.opciones{
+    font-weight: 800;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 100ms;
+    text-shadow: 0px 0px 1px var(--color-secundario);
+}
+.opciones:hover{
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+.imagen-container{
+    width: 500px;
+    border-radius: 50%;
+    height: 500px;
+    right: 6%;
+    bottom: -20%;
+    position: absolute;
+    background: var(--color-secundario);
+    box-shadow: 0px 0px 8px #35301a;
+    animation: zoom-alreves 3s infinite;
+    will-change: animation;
+    border: solid 1px #000;
+}
+@keyframes zoom-alreves {
+    0%,100%{
+        transform: scale(1.07);
+        opacity: 0.9;
+    } 50%{
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+.menu-img{
+    position: absolute;
+    width: 700px;
+    top: -150px;
+    right: -100px;
+    animation: zoom 3s infinite;
+    will-change: animation;
+}
+@keyframes zoom {
+    0%,100%{
+        transform: scale(1.0) rotate(0deg) translateX(0px);
+        opacity: 1;
+    } 50%{
+        transform: scale(1.12) rotate(-4deg) translateX(-30px);
+    } 
+}
+.text-menu{
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+}
+.titulo{
+    letter-spacing: 10px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 40px;
+    font-size: 40px;
+    animation: parpadeo 2s infinite;
+    text-shadow: 0px 0px 2px #000;
+}
+.descripcion{
+    text-shadow: 0px 0px 2px #000;
+}
+@keyframes parpadeo {
+    0%,100%{
+        opacity: 1;
+        transform: scale(1.03);
+    } 50%{
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+.teddy{
+    width: 200px;
+    margin: 0 auto;
+    opacity: 0.8;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 8px var(--color-secundario));
+    transition: 200ms;
+}
+.teddy:hover{
+    transform: scale(1.08) translateY(-5px) rotate(2deg);
+    opacity: 1;
+}
+.pagina{
+    height: 100vh;
+    box-shadow: inset 0px -5px 20px #000;
+    position: relative;
+    overflow: hidden;
+}
+.samurai{
+    position: absolute;
+    right: -55%;
+    width: 400px;
+    top: -70%;
+    rotate: -30deg;
+    filter: drop-shadow(0px 0px 8px #000);
+}
+.torre{
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+    will-change: animation;
+    left: -8%;
+    bottom: -30%;
+    filter: drop-shadow(0px 0px 8px #000);
+    transform: scale(0.8);
+    opacity: 0.8;
+    transition: 500ms;
+}
+.torre:hover{
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+/* Main */
+.personalidad{
+    height: 70vh;
+    background: var(--color-secundario);
+    border-top: solid 2px #000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+
+.titan{
+    width: 700px;
+    filter: drop-shadow(-3px 3px 0px #000);
+    opacity: 0;
+    transform: translateX(-400px);
+    z-index: 1;
+    
+    transition: 500ms;
+}
+.titanAnimacion{
+    transition-delay: 200ms;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.personalidad-text{
+    text-shadow: 0px 0px 1px #ffffffa2;
+    color: var(--letra);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.titulo-personalidad{
+    letter-spacing: 10px;
+    font-family: 'Cinzel', serif;
+    animation: parpadeo 2s infinite;
+    margin-bottom: 30px;
+}
+.descripcion-personalidad{
+    z-index: 1;
+    width: 460px;
+    margin: 0 auto;
+}
+.carta-personalidad{
+    width: 70%;
+    border: solid 2px #000;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 20px;
+    background: #36311a;
+    position: relative;
+    border-radius: 20px;
+}
+.montaña{
+    filter: drop-shadow(-3px 3px 0px #000);
+    opacity: 0.6;
+    position: absolute;
+    width: 550px;
+    top: -10%;
+}
+.tarjeta{
+    position: relative;
+    text-align: center;
+    height: 400px;
+    border: solid 2px #000;
+    width: 350px;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    background: rgb(166,77,49);
+    background: linear-gradient(73deg, rgba(166,77,49,1) 35%, rgba(161,50,16,1) 100%);     
+    color: var(--fondo);
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #000;
+}
+.container-tarjeta{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: 500ms;
+}
+.container-tarjeta-animation{
+    transition-delay: 200ms;
+    opacity: 1;
+}
+.gustos{
+    
+    box-shadow: inset 0px 10px 10px #00000081;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px #000;
+    font-family: 'Cinzel', serif;
+    background: rgb(221,181,129);
+    background: linear-gradient(73deg, rgba(221,181,129,1) 35%, rgba(255,196,120,1) 100%);
+    border-top: solid 2px #000;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+.img-tarjeta{
+    transition: 200ms;
+}
+.img-tarjeta:hover{
+    transform: translateY(-8px) scale(1.04);
+    filter: drop-shadow(-20px 10px 20px #00000096);
+}
+.img-tarjeta-fresas{
+    width: 350px;
+}
+
+.img-tarjeta-voleibol{
+    position: absolute;
+    left: -10%;
+    width: 520px;
+}
+.img-tarjeta-videojuegos{
+    width: 600px;
+    position: absolute;
+    left: -10%;
+    bottom: -10%;
+}
+.titulo-gustos{
+    animation: parpadeo 2s infinite;
+    letter-spacing: 10px;
+}
+.titulo-gustos-tarjeta{
+    width: 100%;
+    text-shadow: 0px 0px 8px #000;
+    padding-bottom: 10px;
+}
+.adiccional{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    z-index: 2;
+    width: 100%;
+    text-shadow: -1px 1px #000;
+    background: var(--color-secundario);
+    font-size: 13px;
+    color: #fff;
+}
