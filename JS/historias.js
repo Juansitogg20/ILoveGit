@@ -71,4 +71,4 @@ class peliculas{
         })
     }
 }
-let teddyLaUltimaLuz = new peliculas("Teddy: La ultima luz", 1, "Fantasía oscura, romance progresivo, terror psicológico, drama, aventura sobrenatural.", "Una chica, su perro y un joven desconocido enfrentan el inicio de un apocalipsis sobrenatural que desata sus miedos más profundos. Entre sombras, secretos y lazos que se fortalecen, descubren que el amor puede ser la última luz.", "../IMG/teddylaultimaluz.webp", "../IMG/teddylaultimaluzportada.webp", "Kagayaki no Fin — El Brillo Final", "../AUDIO/KagayakinoFinElBrilloFinal.ogg", 5)
+let teddyLaUltimaLuz = new peliculas("Teddy: La ultima luz", 1, "Fantasía oscura, romance progresivo, terror psicológico, drama, aventura sobrenatural.", "Una chica, su perro y un joven desconocido enfrentan el inicio de un apocalipsis sobrenatural que desata sus miedos más profundos. Entre sombras, secretos y lazos que se fortalecen, descubren que el amor puede ser la última luz.", "../IMG/tdfondo.webp", "../IMG/tdportada.webp", "Kagayaki no Fin — El Brillo Final", "../AUDIO/KagayakinoFinElBrilloFinal.ogg", 5)
