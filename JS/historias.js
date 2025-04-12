@@ -42,7 +42,7 @@ class peliculas{
             <div class="descargar">
                 <h5 class="iniciar">INICIAR</h5>
                 <p>o</p>
-                <a href="archivos/Teddy_La_ultima_luz.pdf" download="Teddy_La_ultima_luz.pdf"><h5 class="iniciar">DESCARGAR</h5></a>
+                <a href="archivos/TeddyLaultimaluz.pdf" download="TeddyLaultimaluz.pdf"><h5 class="iniciar">DESCARGAR</h5></a>
             </div>
         `;
         let opening = new Audio(`${peliculasAgregadas[0].openingRuta}`)
