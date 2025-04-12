@@ -46,7 +46,7 @@ class peliculas{
             </div>
         `;
         let opening = new Audio(`${peliculasAgregadas[0].openingRuta}`)
-        opening.volume = 0.5;
+        opening.volume = 0.3;
         let estado = false;
         opening.pause();
         opening.currentTime = 0;
