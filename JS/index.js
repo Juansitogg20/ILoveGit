@@ -14,8 +14,8 @@ proximo.addEventListener("click", () => {
 })
 
 Music.loop = true;
-Music.volume = 0.005;
-welcome.volume = 0.005;
+Music.volume = 0.5;
+welcome.volume = 0.8;
 
 // Inicio carta
 let xCarta = document.querySelector(".x")

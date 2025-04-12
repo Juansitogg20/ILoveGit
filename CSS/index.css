@@ -345,7 +345,7 @@ body {
     background: linear-gradient(73deg, rgba(221,181,129,1) 35%, rgba(255,196,120,1) 100%);
     border-top: solid 2px #000;
     width: 100%;
-    height: 75vh;
+    height: fit-content;
     overflow: hidden;
 }
 .img-tarjeta{
