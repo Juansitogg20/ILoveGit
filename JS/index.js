@@ -1,5 +1,4 @@
 let Music = new Audio("AUDIO/inicio.ogg")
-let welcome = new Audio("AUDIO/welcome.ogg")
 let menu = document.querySelector(".menu")
 let introCarta = document.querySelector(".intro")
 let body = document.querySelector(".body")
@@ -15,18 +14,14 @@ proximo.addEventListener("click", () => {
 
 Music.loop = true;
 Music.volume = 0.4;
-welcome.volume = 0.6;
 
 // Inicio carta
 let xCarta = document.querySelector(".x")
 xCarta.addEventListener("click", () => {
-    welcome.play();
     introCarta.style.display = "none"
     menu.style.filter = "blur(0px)"
     body.style.overflowY = "visible"
-    setTimeout(() => {
-        Music.play()
-    },1500)
+    Music.play()
 })
 
 // Aparicion de elementos
@@ -60,3 +55,9 @@ let observerTitan = new IntersectionObserver((entries) => {
 let titan = document.querySelector(".titan")
 observerTitan.observe(titan);
 
+// carrusel
+let carrusel = document.querySelector(".carrusel")
+let anime = document.querySelector(".animes")
+anime.addEventListener("click", () => {
+    carrusel.classList.add("animeCarrusel")
+})

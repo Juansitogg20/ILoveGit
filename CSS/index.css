@@ -392,3 +392,26 @@ body {
     font-size: 13px;
     color: #fff;
 }
+.inicio{
+    width: 100vw;
+}
+
+.body{
+    width: 100vw;
+}
+.carrusel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0vw);
+    display: flex;
+    width: fit-content;
+    transition: 600ms;
+}
+.animeCarrusel{
+    transform: translateX(-100vw);
+    transition: 600ms;
+}

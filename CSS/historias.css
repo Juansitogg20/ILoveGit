@@ -123,14 +123,17 @@ body {
     0%,100%{
         transform: scale(1.0);
     } 12.5%{
-        transform: scale(1.07);
+        transform: scale(1.04);
     } 25%{
         transform: scale(1.0);
     } 37.5% {
-        transform: scale(1.07);
+        transform: scale(1.04);
     } 50%{
         transform: scale(1.0);
     }
+}
+.iniciar:hover{
+    opacity: 0.8;
 }
 .generoTitulo{
     color: var(--letra);
@@ -233,3 +236,5 @@ body {
     height: 20px;
     text-shadow: 0px 0px 8px #000;
 }
+
+/* Animes */
