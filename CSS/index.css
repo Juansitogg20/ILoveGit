@@ -411,7 +411,77 @@ body {
     width: fit-content;
     transition: 600ms;
 }
+h1{
+    animation: parpadeo 2s infinite;
+    font-family: 'Cinzel', serif;
+}
 .animeCarrusel{
     transform: translateX(-100vw);
     transition: 600ms;
+}
+.LaVeo{
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    background: var(--letra);
+    border-top: solid 2px #000;
+    height: 70vh;
+    overflow: hidden;
+    color: #000;
+}
+.enamorado{
+    position: absolute;
+    width: 450px;
+    right: 10%;
+    bottom: -30vh;
+    z-index: 1;
+    animation: enamorado 1s infinite;
+    will-change: animation;
+}
+@keyframes enamorado {
+    0%,100%{
+        transform: scale(1.0);
+        filter: drop-shadow(0px 0px 2px #ae0a0a);
+    } 50%{
+        transform: scale(1.1);
+        filter: drop-shadow(0px 0px 18px #ae0a0a);
+    }
+}
+.titulo-enamorado{
+    width: 70%;
+    text-align: center;
+    text-shadow: -1px 1px #000;
+    color: #ffffff;
+    z-index: 2;
+}
+.titulo-enamorado p{
+    font-size: 14px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #000000;
+}
+.titulo-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.fondo{
+    border-right: solid 2px #000;
+    position: absolute;
+    background: #7a000074;
+    width: 95%;
+    overflow: hidden;
+    height: 100%;
+    transform: rotate(10deg) scale(1.6);
+    box-shadow: inset -1px 0px 10px #000000a5;
+}
+.corazon{
+    width: 360px;
+    position: absolute;
+    right: -20%;
+    opacity: 0.5;
 }
