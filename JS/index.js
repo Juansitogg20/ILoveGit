@@ -25,35 +25,61 @@ xCarta.addEventListener("click", () => {
 })
 
 // Aparicion de elementos
-function verificarVistaAparicion(e, clase) {
+function verificarVista(e, clase, variable) {
     let entry = e[0];
     if (entry.isIntersecting) {
-        tarjetasAnimacion.classList.add(`${clase}`);
+        variable.classList.add(`${clase}`);
     } else{
-        tarjetasAnimacion.classList.remove(`${clase}`);
+        variable.classList.remove(`${clase}`);
     }
 }
+
+
 let observarAparicion = new IntersectionObserver((entries) => {
-    verificarVistaAparicion(entries, "container-tarjeta-animation")
+    verificarVista(entries, "container-tarjeta-animation", tarjetasAnimacion)
 })
 let tarjetasAnimacion = document.querySelector(".container-tarjeta")
 observarAparicion.observe(tarjetasAnimacion);
 
 
 // Titan
-function verificarVista(e, clase) {
-    let entry = e[0];
-    if (entry.isIntersecting) {
-        titan.classList.add(`${clase}`);
-    } else{
-        titan.classList.remove(`${clase}`);
-    }
-}
+
 let observerTitan = new IntersectionObserver((entries) => {
-    verificarVista(entries, "titanAnimacion")
+    verificarVista(entries, "titanAnimacion", titan)
 })
 let titan = document.querySelector(".titan")
 observerTitan.observe(titan);
+
+// Preocupacion animacion
+
+let observerPreocupacion = new IntersectionObserver((entries) => {
+    verificarVista(entries, "preocupacionIMGAnimation", Preocupacion)
+})
+let Preocupacion = document.querySelector(".preocupacionIMG")
+observerPreocupacion.observe(Preocupacion);
+
+
+let observerEnamorado = new IntersectionObserver((entries) => {
+    verificarVista(entries, "enamoradoAnimation", Enamorado)
+})
+let Enamorado = document.querySelector(".enamorado")
+observerEnamorado.observe(Enamorado);
+
+
+let observerMenu = new IntersectionObserver((entries) => {
+    verificarVista(entries, "menu-img-animation", Menu)
+})
+let Menu = document.querySelector(".menu-img")
+observerMenu.observe(Menu);
+
+
+let observerMenu2 = new IntersectionObserver((entries) => {
+    verificarVista(entries, "imagen-container-animation", Menu2)
+})
+let Menu2 = document.querySelector(".imagen-container")
+observerMenu2.observe(Menu2);
+
+
 
 // carrusel
 let carrusel = document.querySelector(".carrusel")
