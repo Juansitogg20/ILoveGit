@@ -1,4 +1,4 @@
-let Music = new Audio("AUDIO/inicio.ogg")
+
 let menu = document.querySelector(".menu")
 let introCarta = document.querySelector(".intro")
 let body = document.querySelector(".body")
@@ -10,18 +10,6 @@ proximo.addEventListener("click", () => {
     setTimeout(() => {
         proximamente.classList.remove("proximamenteAnimacion");
     }, 8000)
-})
-
-Music.loop = true;
-Music.volume = 0.4;
-
-// Inicio carta
-let xCarta = document.querySelector(".x")
-xCarta.addEventListener("click", () => {
-    introCarta.style.display = "none"
-    menu.style.filter = "blur(0px)"
-    body.style.overflowY = "visible"
-    Music.play()
 })
 
 // Aparicion de elementos

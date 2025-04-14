@@ -3,7 +3,7 @@ let pagina = document.querySelector(".pagina")
 let portadas = document.querySelector(".portadas")
 let flechas = document.querySelectorAll(".esconder")
 let click = new Audio("AUDIO/click.ogg")
-click.volume = 0.01;
+click.volume = 0.9;
 let peliculasAgregadas = [];
 class peliculas{
     constructor(nombre, temporadas, trama, descripcion, portadaGrande, portada, openingNombre, openingRuta, calificacion) {

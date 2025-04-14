@@ -61,55 +61,6 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    filter: blur(10px);
-}
-.intro{
-    z-index: 2;
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.intro-mensaje{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.intro-carta{
-    text-align: center;
-    font-weight: 600;
-    font-family: 'Cinzel', serif;
-    font-size: 26px;
-    padding: 20px;
-    color: #000;
-    background: #e9c488;
-    border-radius: 20px 0px 20px 0px;
-    border: solid 3px #000;
-    width: 500px;
-    height: fit-content;
-}
-.x{
-    width: fit-content;
-    background: red;
-    border: solid 2px #000;
-    width: 30px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    z-index: 3;
-}
-.cerrar-carta{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    color: #000;
-    margin-bottom: 10px;
-}
-.intro-img{
-    position: absolute;
-    z-index: 2;
-    right: -10%;
 }
 .logo{
     width: 70px;
@@ -351,11 +302,10 @@ body {
     overflow: hidden;
 }
 .img-tarjeta{
-    transition: 200ms;
+    transition: 100ms;
 }
 .img-tarjeta:hover{
-    transform: translateY(-8px) scale(1.04);
-    filter: drop-shadow(-20px 10px 20px #00000096);
+    transform: translateY(-8px) scale(1.03);
 }
 .img-tarjeta-fresas{
     width: 350px;
